@@ -25,6 +25,7 @@ CoffeeCode é um conjunto de pequenos e otimizados componentes PHP para tarefas 
 - Quickly configure TwitterCard data for sharing cards (Configure rapidamente os dados TwitterCard para cartões de compartilhamento)
 - Quickly configure OpenGraph data for social sharing. (Configure rapidamente os dados OpenGraph para compartilhamento social.)
 - Add FacebookAdmins or FacebookAppId and everything is ready (Adiciona FacebookAdmins ou FacebookAppId e tudo fica pronto)
+- Composer ready and PSR-2 compliant (Pronto para o composer e compatível com PSR-2)
 
 ## Installation
 
