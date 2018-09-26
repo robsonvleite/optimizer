@@ -59,20 +59,6 @@ class MetaTags
     }
 
     /**
-     * @return string
-     */
-    public function render(): string
-    {
-        $render = '';
-
-        for ($this->meta->rewind(); $this->meta->valid(); $this->meta->next()) {
-            $render .= $this->meta->current()->asXML();
-        }
-
-        return urldecode($render);
-    }
-
-    /**
      * @param string|null $title
      * @param string|null $desc
      * @param string|null $url
@@ -95,6 +81,20 @@ class MetaTags
     public function meta(): \SimpleXMLIterator
     {
         return $this->meta;
+    }
+
+    /**
+     * @return string
+     */
+    public function render(): string
+    {
+        $render = '';
+
+        for ($this->meta->rewind(); $this->meta->valid(); $this->meta->next()) {
+            $render .= $this->meta->current()->asXML();
+        }
+
+        return urldecode($render);
     }
 
     /**
