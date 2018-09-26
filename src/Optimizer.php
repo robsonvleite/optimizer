@@ -20,10 +20,11 @@ class Optimizer extends MetaTags
      */
     public function optimize(string $title, string $description, string $url, string $image, bool $follow = true): Optimizer
     {
-        $title = $this->filter($title);
-        $description = $this->filter($description);
         $this->data($title, $description, $url, $image);
 
+        $title = $this->filter($title);
+        $description = $this->filter($description);
+        
         $this->buildTag("title", $title);
         $this->buildMeta("name", ["description" => $description]);
         $this->buildMeta("name", ["robots" => ($follow ? "index, follow" : "noindex, nofollow")]);
