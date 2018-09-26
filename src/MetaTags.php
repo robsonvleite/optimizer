@@ -69,7 +69,7 @@ class MetaTags
             $render .= $this->meta->current()->asXML();
         }
 
-        return $render;
+        return urldecode($render);
     }
 
     /**
@@ -151,6 +151,6 @@ class MetaTags
      */
     protected function filter(string $string): string
     {
-        return filter_var($string, FILTER_SANITIZE_SPECIAL_CHARS);
+        return urlencode(filter_var($string, FILTER_SANITIZE_SPECIAL_CHARS));
     }
 }
