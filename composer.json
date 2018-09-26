@@ -1,0 +1,32 @@
+{
+  "name": "coffeecode/optimizer",
+  "description": "Optimizer makes it easy to bookmark your site tags, open graph and twitter card",
+  "keywords": [
+    "CoffeeCode",
+    "UpInside",
+    "SEO",
+    "SMO",
+    "Meta Tags",
+    "Open Graph",
+    "Twitter Card",
+    "Facebook Tags"
+  ],
+  "homepage": "http://www.upinside.com.br",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Robson V. Leite",
+      "email": "cursos@upinside.com.br",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "ext-simplexml": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "CoffeeCode\\Optimizer\\": "src"
+    }
+  }
+}
