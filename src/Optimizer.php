@@ -18,7 +18,7 @@ class Optimizer extends MetaTags
      * @param bool $follow
      * @return Optimizer
      */
-    public function optimize(string $title, string $description, string $url, string $image, $follow = true): Optimizer
+    public function optimize(string $title, string $description, string $url, string $image, bool $follow = true): Optimizer
     {
         $title = $this->filter($title);
         $description = $this->filter($description);
