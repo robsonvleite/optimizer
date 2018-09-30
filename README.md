@@ -2,9 +2,10 @@
 
 [![Maintainer](http://img.shields.io/badge/maintainer-@robsonvleite-blue.svg?style=flat-square)](https://twitter.com/robsonvleite)
 [![Source Code](http://img.shields.io/badge/source-coffeecode/optimizer-blue.svg?style=flat-square)](https://github.com/robsonvleite/optimizer)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/coffeecode/optimizer.svg?style=flat-square)](https://packagist.org/packages/coffeecode/paginator)
 [![Latest Version](https://img.shields.io/github/release/robsonvleite/optimizer.svg?style=flat-square)](https://github.com/robsonvleite/optimizer/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build Status](https://scrutinizer-ci.com/g/robsonvleite/optimizer/badges/build.png?b=master&style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/optimizer/build-status/master)
+[![Build](https://img.shields.io/scrutinizer/build/g/robsonvleite/optimizer.svg?style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/optimizer)
 [![Quality Score](https://img.shields.io/scrutinizer/g/robsonvleite/optimizer.svg?style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/optimizer)
 [![Total Downloads](https://img.shields.io/packagist/dt/coffeecode/optimizer.svg?style=flat-square)](https://packagist.org/packages/coffeecode/optimizer)
 
