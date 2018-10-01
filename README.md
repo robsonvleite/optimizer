@@ -56,7 +56,7 @@ require __DIR__ . "/../vendor/autoload.php";
 
 $op = new \CoffeeCode\Optimizer\Optimizer();
 
-echo $op->optimizer(
+echo $op->optimize(
     "Optimizer Happy and @CoffeeCode",
     "Is a compact and easy-to-use tag creator to optimize your site",
     "https://www.upinside.com.br/coffeecode/optimizer/example/",
