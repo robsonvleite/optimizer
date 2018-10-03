@@ -83,6 +83,8 @@ class Optimizer extends MetaTags
     public function openGraph(string $siteName, string $locale = "pt_BR", string $schema = "article"): Optimizer
     {
         $prefix = "og";
+        $siteName = $this->filter($siteName);
+
         $this->buildMeta("property", [
             "{$prefix}:type" => $schema,
             "{$prefix}:site_name" => $siteName,
