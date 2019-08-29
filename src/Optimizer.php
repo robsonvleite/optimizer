@@ -18,13 +18,18 @@ class Optimizer extends MetaTags
      * @param bool $follow
      * @return Optimizer
      */
-    public function optimize(string $title, string $description, string $url, string $image, bool $follow = true): Optimizer
-    {
+    public function optimize(
+        string $title,
+        string $description,
+        string $url,
+        string $image,
+        bool $follow = true
+    ): Optimizer {
         $this->data($title, $description, $url, $image);
 
         $title = $this->filter($title);
         $description = $this->filter($description);
-        
+
         $this->buildTag("title", $title);
         $this->buildMeta("name", ["description" => $description]);
         $this->buildMeta("name", ["robots" => ($follow ? "index, follow" : "noindex, nofollow")]);
@@ -51,24 +56,19 @@ class Optimizer extends MetaTags
 
     /**
      * @param string $fbPage
-     * @param string $fbAuthor
-     * @param string $plusPage
-     * @param string|null $plusAuthor
+     * @param string|null $fbAuthor
      * @return Optimizer
      */
-    public function publisher(string $fbPage, string $fbAuthor, string $plusPage, string $plusAuthor = null): Optimizer
+    public function publisher(string $fbPage, string $fbAuthor = null): Optimizer
     {
         $this->buildMeta("property", [
-            "article:author" => "https://www.facebook.com/{$fbAuthor}",
             "article:publisher" => "https://www.facebook.com/{$fbPage}"
         ]);
 
-        if ($plusAuthor) {
-            $this->buildLink("author", "https://plus.google.com/{$plusAuthor}");
-        }
-
-        if ($plusPage) {
-            $this->buildLink("publisher", "https://plus.google.com/{$plusPage}");
+        if ($fbAuthor) {
+            $this->buildMeta("property", [
+                "article:author" => "https://www.facebook.com/{$fbAuthor}"
+            ]);
         }
 
         return $this;

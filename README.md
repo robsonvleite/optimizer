@@ -95,9 +95,7 @@ $op = new \CoffeeCode\Optimizer\Optimizer();
 
 echo $op->publisher(
   "upinside",
-  "robsonvleite",
-  "107305124528362639842",
-  "103958419096641225872"
+  "robsonvleite"
 )->render();
 ```
 
@@ -106,8 +104,6 @@ echo $op->publisher(
 ````html
 <meta property="article:publisher" content="https://www.facebook.com/upinside"/>
 <meta property="article:author" content="https://www.facebook.com/robsonvleite"/>
-<link rel="publisher" href="https://plus.google.com/107305124528362639842"/>
-<link rel="author" href="https://plus.google.com/103958419096641225872"/>
 ````
 
 #### @twitterCard
