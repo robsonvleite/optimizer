@@ -22,7 +22,7 @@ CoffeeCode é um conjunto de pequenos e otimizados componentes PHP para tarefas 
 ### Highlights
 
 - Simple composer for dynamic data (Compositor simples para dados dinâmicos)
-- Author and publisher settings for Facebook and Google Plus (Configuração de autor e publicador para Facebook e Google Plus)
+- Author and publisher settings for Facebook (Configuração de autor e publicador para Facebook)
 - Quickly configure TwitterCard data for sharing cards (Configure rapidamente os dados TwitterCard para cartões de compartilhamento)
 - Quickly configure OpenGraph data for social sharing. (Configure rapidamente os dados OpenGraph para compartilhamento social.)
 - Add FacebookAdmins or FacebookAppId and everything is ready (Adiciona FacebookAdmins ou FacebookAppId e tudo fica pronto)
