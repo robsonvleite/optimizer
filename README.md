@@ -33,7 +33,7 @@ CoffeeCode é um conjunto de pequenos e otimizados componentes PHP para tarefas 
 Optimizer is available via Composer:
 
 ```bash
-"coffeecode/optimizer": "^2.0"
+"coffeecode/optimizer": "2.0.*"
 ```
 
 or run
