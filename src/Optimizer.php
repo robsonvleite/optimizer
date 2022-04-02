@@ -36,20 +36,26 @@ class Optimizer extends MetaTags
         $this->buildLink("canonical", $url);
 
         foreach ($this->tags as $meta => $prefix) {
-            $this->buildMeta($meta, [
-                "{$prefix}:title" => $title,
-                "{$prefix}:description" => $description,
-                "{$prefix}:url" => $url,
-                "{$prefix}:image" => $image
-            ]);
+            $this->buildMeta(
+                $meta,
+                [
+                    "{$prefix}:title" => $title,
+                    "{$prefix}:description" => $description,
+                    "{$prefix}:url" => $url,
+                    "{$prefix}:image" => $image
+                ]
+            );
         }
 
-        $this->buildMeta("itemprop", [
-            "name" => $title,
-            "description" => $description,
-            "url" => $url,
-            "image" => $image
-        ]);
+        $this->buildMeta(
+            "itemprop",
+            [
+                "name" => $title,
+                "description" => $description,
+                "url" => $url,
+                "image" => $image
+            ]
+        );
 
         return $this;
     }
@@ -61,14 +67,20 @@ class Optimizer extends MetaTags
      */
     public function publisher(string $fbPage, string $fbAuthor = null): Optimizer
     {
-        $this->buildMeta("property", [
-            "article:publisher" => "https://www.facebook.com/{$fbPage}"
-        ]);
+        $this->buildMeta(
+            "property",
+            [
+                "article:publisher" => "https://www.facebook.com/{$fbPage}"
+            ]
+        );
 
         if ($fbAuthor) {
-            $this->buildMeta("property", [
-                "article:author" => "https://www.facebook.com/{$fbAuthor}"
-            ]);
+            $this->buildMeta(
+                "property",
+                [
+                    "article:author" => "https://www.facebook.com/{$fbAuthor}"
+                ]
+            );
         }
 
         return $this;
@@ -85,11 +97,14 @@ class Optimizer extends MetaTags
         $prefix = "og";
         $siteName = $this->filter($siteName);
 
-        $this->buildMeta("property", [
-            "{$prefix}:type" => $schema,
-            "{$prefix}:site_name" => $siteName,
-            "{$prefix}:locale" => $locale
-        ]);
+        $this->buildMeta(
+            "property",
+            [
+                "{$prefix}:type" => $schema,
+                "{$prefix}:site_name" => $siteName,
+                "{$prefix}:locale" => $locale
+            ]
+        );
 
         return $this;
     }
@@ -106,12 +121,15 @@ class Optimizer extends MetaTags
         $prefix = "twitter";
         $card = ($card ?? "summary_large_image");
 
-        $this->buildMeta("name", [
-            "{$prefix}:card" => $card,
-            "{$prefix}:site" => $site,
-            "{$prefix}:creator" => $creator,
-            "{$prefix}:domain" => $domain
-        ]);
+        $this->buildMeta(
+            "name",
+            [
+                "{$prefix}:card" => $card,
+                "{$prefix}:site" => $site,
+                "{$prefix}:creator" => $creator,
+                "{$prefix}:domain" => $domain
+            ]
+        );
 
         return $this;
     }
