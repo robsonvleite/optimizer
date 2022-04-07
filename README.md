@@ -5,12 +5,11 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/coffeecode/optimizer.svg?style=flat-square)](https://packagist.org/packages/coffeecode/optimizer)
 [![Latest Version](https://img.shields.io/github/release/robsonvleite/optimizer.svg?style=flat-square)](https://github.com/robsonvleite/optimizer/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![Build](https://img.shields.io/scrutinizer/build/g/robsonvleite/optimizer.svg?style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/optimizer)
 [![Quality Score](https://img.shields.io/scrutinizer/g/robsonvleite/optimizer.svg?style=flat-square)](https://scrutinizer-ci.com/g/robsonvleite/optimizer)
 [![Total Downloads](https://img.shields.io/packagist/dt/coffeecode/optimizer.svg?style=flat-square)](https://packagist.org/packages/coffeecode/optimizer)
 
-###### Optimizer is a component of website optimization for search engines and social networks. Simplified and straight to the point it creates the necessary tags and links in your ***
-head*** for the best search and sharing result.
+###### Optimizer is a component of website optimization for search engines and social networks. Simplified and straight to the point it creates the necessary tags and links in your 
+***head*** for the best search and sharing result.
 
 Optimizer é um componente de otimização de sites para motores de buscas e redes sociais. Simplificado e direto ao ponto
 ele cria as tags e links necessários em sua ***head*** para o melhor resultado de busca e compartilhamento.
@@ -58,7 +57,6 @@ Para mais detalhes sobre como usar o optimizer, veja a pasta de exemplo com deta
 
 ```php
 <?php
-require __DIR__ . "/../vendor/autoload.php";
 
 $op = new \CoffeeCode\Optimizer\Optimizer();
 
@@ -98,7 +96,6 @@ echo $op->optimize(
 
 ```php
 <?php
-require __DIR__ . "/../vendor/autoload.php";
 
 $op = new \CoffeeCode\Optimizer\Optimizer();
 
@@ -120,7 +117,6 @@ echo $op->publisher(
 
 ```php
 <?php
-require __DIR__ . "/../vendor/autoload.php";
 
 $op = new \CoffeeCode\Optimizer\Optimizer();
 
@@ -146,7 +142,6 @@ echo $op->twitterCard(
 
 ```php
 <?php
-require __DIR__ . "/../vendor/autoload.php";
 
 $op = new \CoffeeCode\Optimizer\Optimizer();
 
