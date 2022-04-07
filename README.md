@@ -38,7 +38,7 @@ equipe UpInside. Com eles você executa tarefas rotineiras com poucas linhas, es
 Optimizer is available via Composer:
 
 ```bash
-"coffeecode/optimizer": "2.0.*"
+"coffeecode/optimizer": "2.1.*"
 ```
 
 or run
